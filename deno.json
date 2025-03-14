@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "strict": true
+    },
+    "tasks": {
+      "start": "deno run --allow-net --watch=scrapers/ main.ts",
+      "test": "deno test --allow-net",
+      "lint": "deno lint"
+    }
+  }
