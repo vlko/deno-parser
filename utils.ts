@@ -76,11 +76,3 @@ export async function saveToJson(filename: string, data: unknown): Promise<void>
     throw error;
   }
 }
-
-/**
- * Simple rate limiter function to avoid overloading websites
- * @param ms Milliseconds to wait
- */
-export async function sleep(ms: number): Promise<void> {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}

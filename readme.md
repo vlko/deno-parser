@@ -2,7 +2,7 @@
 
 A Deno-based web scraper project to extract information from various websites:
 
-* Events from https://www.dkno.sk/
+* Events from https://www.dkno.sk/ (using the AJAX API endpoint)
 * Movie events from https://kino.dkno.sk/ (using the AJAX API endpoint)
 * News ("aktuality") from https://www.namestovo.sk/sk/aktuality
 * Official notices ("úradná tabuľa") from https://www.namestovo.sk/sk/uradna-tabula
@@ -20,14 +20,12 @@ A Deno-based web scraper project to extract information from various websites:
 ├── types.ts                 # Type definitions
 ├── utils.ts                 # Utility functions
 ├── config.ts                # Configuration settings
-├── run_scraper.ts           # Run individual scrapers
-├── combine_results.ts       # Combine results from all scrapers
-├── scrape_kino_ajax.ts      # Standalone kino AJAX scraper
 └── scrapers/
-    ├── dkno.ts              # DKNO events scraper
-    ├── kino.ts              # KINO events scraper
+    ├── dkno_ajax.ts         # DKNO events ajax scraper
+    ├── kino_ajax.ts         # KINO events ajax scraper
     ├── namestovo_news.ts    # Namestovo news scraper
-    └── namestovo_tabula.ts  # Namestovo tabula scraper
+    ├── namestovo_tabula.ts  # Namestovo tabula scraper
+    └── ticketportal_ajax.ts # Base ajax utils and params definition
 ```
 
 ## Running the Project
