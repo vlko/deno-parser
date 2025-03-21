@@ -4,7 +4,7 @@ export interface Event {
   location?: string;
   description?: string;
   imageUrl?: string;
-  url?: string;
+  url: string;
 }
 
 
